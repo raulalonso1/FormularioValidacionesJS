@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="contenedor">
+
+        <form action="./"  method="post">
+            <!-- Campo de nombre completo -->
+            <label for="nombre"><h4>Introduce tu nombre completo: </h4></label>
+            <input type="text" name="nombre" id="nombre" placeholder="Pepito Perez Galdos"  />
+            <span class="error" id="errorNombre"></span>
+            <!-- Campo de correo -->
+            <label for="email"><h4> Introduce tu correo electronico: </h4></label>
+            <input type="email" id="email" size="30" placeholder="ejemplo@myuax.com"  />
+            <span class="error" id="errorEmail"></span>
+            <!-- Campo de numero de telefono -->
+            <label for="telefono"><h4>Introduce tu numero de telefono: </h4></label>
+            <input type="tel" name="telefono" id="telefono" placeholder="685475123"  />
+            <span class="error" id="errorTelefono"></span>
+            <!-- Campo de fecha de nacimientos -->
+            <label for="date"><h4>Introduce tu fecha de nacimiento : </h4></label>
+            <input type="date" name="date" id="date"  />
+            <span class="error" id="errorDate"></span>
+            <!-- Campo de seleccion de genero -->
+            <label for="titulogenero"><h4>Selecciona tu género:</h4></label>
+                <div class="generos" id="cajaMasculino">
+                    <input type="radio" name="genero" id="masculino" value="masculino" />
+                    <label for="masculino">Masculino</label>
+                </div>
+                <div class="generos" id="cajaFemenino">
+                    <input type="radio" name="genero" id="femenino" value="femenino" />
+                    <label for="femenino">Femenino</label>
+                    
+            </div>
+            <span class="error" id="errorGenero"></span>
+            <!-- Campo de seleccion de pais -->
+            <label for="pais"><h4>Seleccione un pais :</h4></label>
+            <select id="pais" name="pais">
+                <option value="argentina">Argentina</option>
+                <option value="brasil">Brasil</option>
+                <option value="chile">Chile</option>
+                <option value="mexico">México</option>
+                <option value="espana">España</option>
+                <option value="colombia">Colombia</option>
+            </select>
+            <div class="terminos">
+                <label for="aceptarterminos">Acepta los terminos y condiciones:</label>
+                <input type="checkbox" name="aceptarterminos" id="aceptarterminos" />
+            </div>
+            <span class="error" id="errorTerminos"></span>
+            <div class="enviar">
+                <input type="submit" value="Enviar">
+            </div>
+            
+        </form>
+
+
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
